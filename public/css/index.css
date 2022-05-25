@@ -1,0 +1,134 @@
+body{
+
+
+    font-family: sans-serif;
+    /*background-color: hsl(207, 19%, 9%);*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+ul{
+
+    list-style: none;
+}
+
+.navbar{
+
+    /*min-height: 100px;*/
+    width: 85%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 3px 3px 3px white;
+    overflow: hidden;
+    margin: 0 auto 100px;
+
+
+}
+
+nav, section{
+
+    margin-bottom: 100px;
+}
+
+nav .container{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: hsl(207, 19%, 9%);
+
+}
+
+nav .logo{
+
+    color: hsl(0, 0%, 100%);
+    margin-left: 20px;
+
+}
+
+nav a, li{
+
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+nav a:hover, li:hover {
+
+    cursor: pointer;
+    color: hsl(142, 90%, 61%);
+}
+.navbar ul{
+
+    display: flex;
+}
+
+li{
+    margin: 0 20px;
+}
+
+
+/* ABOUT */
+
+.section-title{
+
+    --padding: -1.5em;
+    position: relative; /*the parent*/
+    width: max-content; /*so it fits the text*/
+    margin-bottom: 70px;
+}
+
+.section-title::after{
+
+
+    content: "";
+    position: absolute; /*links to its parent?*/
+    height: 4px;
+    left:  0/*calc( var( --padding ) * -1 )*/;
+    bottom: -2px;
+    width: 100%/*calc( 100% + var( --padding ) )*/;
+    background: hsl(142, 90%, 61%);
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+
+i{
+    font-size: 100px;
+    /*margin: 0 0 0 200px;*/
+}
+section > .container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid red;
+
+}
+
+.section-body{
+
+    /*width: 300px;*/
+    /*display: inline-block;*/
+}
+
+/* EXPERIENCE */
+
+.experience-title-container{
+
+    display: flex;
+    justify-content: space-between;
+    border: solid red;
+
+}
+
+.section-info{
+
+    max-width: 400px;
+    width: 100%;
+}
