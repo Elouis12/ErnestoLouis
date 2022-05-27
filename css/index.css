@@ -123,9 +123,17 @@ section > .container{
 section > .container > i{
 
     justify-self: center;
+    text-align: center;
     width: 100px;
 
+}
+section p{
 
+    text-align: center;
+}
+section .card-body{
+
+    text-align: left;
 }
 
 .section-body{
@@ -228,16 +236,6 @@ i {
         width: 100%;
     }
 
-/*
-    #contact .container{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
-    }*/
-
     section .container{
 
         display: flex;
@@ -254,7 +252,92 @@ i {
     display: none;
 }
 
-@media (max-width: 730px) { /* hover links */
+.skills-container > div{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.languages-container{
+
+    width: 600px;
+    /*background-color: red;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.languages-container > div{
+
+    margin: 0 0 30px 0;
+    flex-basis: 25%;
+    color: hsl(142, 90%, 61%);
+}
+
+.languages-container i {
+
+    /*font-size: 50px;*/
+}
+.languages-container h3 {
+
+    /*font-size: 10px;*/
+    text-align: center;
+}
+
+.programming-section{
+
+    /*align-self: center;*/
+
+}
+
+.programming-section > h3{
+
+    /*background-color: red;*/
+    width: 400px;
+}
+/*.skills-container > div{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 0;
+
+}
+
+.programming-section{
+
+    justify-self: end;
+    background-color: red;
+
+}
+
+
+.languages-container{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.languages-container > div{
+
+    text-align: center;
+    !*margin: 0 20px 0 20px;*!
+    flex-basis: 33.33%;
+
+}
+
+.languages-container  h3{
+
+    width: 100%;
+    text-align: center;
+    margin: 10px 10px;
+    color: hsl(142, 90%, 61%);
+}*/
+
+
+@media (max-width: 800px) { /* hover links */
 
     .navbar #navigation{
 
@@ -315,6 +398,38 @@ i {
         color: hsl(142, 90%, 61%);
     }
 
+}
 
+
+@media (max-width: 1200px) {
+
+
+    .skills-container > div{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 33%;
+        margin-bottom: 100px;
+
+    }
+
+    .programming-section > i, .programming-section > h3 {
+
+        align-self: center;
+        justify-self: center;
+        /*margin: 0 auto;*/
+        text-align: center;
+        width: 100%;
+    }
+
+    .languages-container{
+
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+    }
 
 }
