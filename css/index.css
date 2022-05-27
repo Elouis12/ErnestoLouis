@@ -228,12 +228,21 @@ i {
     display: none;
 }
 
+p{
+    line-height: 1.6;
+}
 
 @media (max-width: 1300px) {
 
     #resume  embed{
 
         width: 100%;
+    }
+
+    #resume > .container > i,
+    #resume > .container > .section-info{
+
+        margin-bottom: 100px;
     }
 
     section .container{

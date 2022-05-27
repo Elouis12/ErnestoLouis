@@ -50,3 +50,27 @@ const closeOverlay = () => {
     // e.classList.remove('overlay');
         overlayElement.className = "hide";
 }
+
+
+const projectDisplay = (project) => {
+
+    let projectDetails = {
+
+        "inventory_tracker": {
+
+            images: {},
+            details: {
+                detail1: "Uses MySQL to store user created products and records them",
+                detail2: "Uses MySQL to store user created products and records them",
+                detail3: "Users",
+                detail4: "Future features include barcode reader to facilitate product create even more."
+            }
+
+        }
+
+
+    };
+
+    return  projectDetails[project];
+
+}
