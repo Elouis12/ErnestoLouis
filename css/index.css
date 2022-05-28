@@ -27,13 +27,12 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
-    /*width: 85%;*/
+    /*width: 50%;*/
     width: 100%;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,1);
     /*overflow: hidden;*/
-    /*display: inline-block;*/
     z-index: 1;
 
 }
@@ -359,7 +358,6 @@ p{
         display: inline-block;
         position: relative;
         margin-right: 20px;
-        cursor: pointer;
     }
 
     #dropdown-content{
@@ -400,6 +398,8 @@ p{
     #dropdown-content > a:hover{
 
         color: hsl(142, 90%, 61%);
+        cursor: pointer;
+
     }
 
     #dropdown-content > a:hover::selection{
