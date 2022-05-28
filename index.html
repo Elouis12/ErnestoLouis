@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ernesto's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link id="indexLink" rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/card.css">
   <link rel="stylesheet" type="text/css" href="css/info.css">
 
@@ -19,7 +19,12 @@
 
   <div class="container">
 
-    <div class="logo">Ernesto Louis</div>
+    <div class="logo-container" >
+
+      <i id="nightTheme"  class="fa-solid fa-cloud-moon" onclick="darkMode()"></i>
+      <div id="logo" class="logo">Ernesto Louis</div>
+
+    </div>
 
     <ul id="navigation">
 
@@ -58,7 +63,6 @@
 <section id="navbar-wrapper"></section>
 
 
-
 <!-- ABOUT -->
 <section id="about" class="about">
 
@@ -67,7 +71,7 @@
     </h1>
   <div class="container">
 
-    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-user themeIcon themeIcon"></i>
     <div class="section-info" >
       <p class="section-body">
         My name is Ernesto Louis and I am a Software Engineer.
@@ -93,8 +97,8 @@
 
   <div class="container">
 
-    <i class="fa-solid fa-arrows-spin"></i>
-    <!--    <i class="fa-solid fa-user"></i>-->
+    <i class="fa-solid fa-arrows-spin themeIcon"></i>
+    <!--    <i class="fa-solid fa-user themeIcon"></i>-->
 
     <div class="section-info" >
       <div class="experience-title-container">
@@ -115,9 +119,9 @@
 
   <div class="container">
 
-<!--    <i class="fa-regular fa-plate-utensils"></i>-->
-    <!--    <i class="fa-solid fa-user"></i>-->
-    <i class="fa-solid fa-wine-glass"></i>
+<!--    <i class="fa-regular fa-plate-utensils themeIcon"></i>-->
+    <!--    <i class="fa-solid fa-user themeIcon"></i>-->
+    <i class="fa-solid fa-wine-glass themeIcon"></i>
 
     <div class="section-info" >
       <div class="experience-title-container">
@@ -152,37 +156,37 @@
     <div class="programming-container" >
 
       <div class="programming-section">
-        <i class="fa-solid fa-language"></i>
+        <i class="fa-solid fa-language themeIcon"></i>
         <h3>Programming Languages / Frameworks</h3>
       </div>
 
       <div class="languages-container">
         <div>
-          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-html5 themeIcon"></i>
           <h3>HTML</h3>
         </div>
         <div>
-          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-css3 themeIcon"></i>
           <h3>CSS</h3>
         </div>
         <div>
-          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-js themeIcon"></i>
           <h3>JavaScript</h3>
         </div>
-        <div>
-          <i class="fa-brands fa-java"></i>
+        <div>\
+          <i class="fa-brands fa-java themeIcon"></i>
           <h3>Java</h3>
         </div>
         <div>
-          <i class="icon-cplusplus"></i>
+          <i class="icon-cplusplus themeIcon"></i>
           <h3>C++</h3>
         </div>
         <div>
-          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-brands fa-node-js themeIcon"></i>
           <h3>NodeJs</h3>
         </div>
         <div>
-<!--          <i class="fa-brands fa-node-js"></i>-->
+<!--          <i class="fa-brands fa-node-js themeIcon"></i>-->
           <h3>MongoDB / Mongoose</h3>
         </div>
 
@@ -195,25 +199,25 @@
     <div class="exposed-container" >
 
       <div class="programming-section">
-        <i class="fa-solid fa-binoculars"></i>
+        <i class="fa-solid fa-binoculars themeIcon"></i>
         <h3>Exposed Languages / Frameworks</h3>
       </div>
 
       <div class="languages-container">
         <div>
-          <i class="fa-brands fa-php"></i>
+          <i class="fa-brands fa-php themeIcon"></i>
           <h3>PHP</h3>
         </div>
         <div>
-          <i class="fa-solid fa-database"></i>
+          <i class="fa-solid fa-database themeIcon"></i>
           <h3>MySQL</h3>
         </div>
         <div>
-          <i class="fa-solid fa-bullseye-arrow"></i>
+          <i class="fa-solid fa-bullseye-arrow themeIcon"></i>
           <h3>Dart / Flutter</h3>
         </div>
         <div>
-          <i class="fa-brands fa-android"></i>
+          <i class="fa-brands fa-android themeIcon"></i>
           <h3>Android Studio</h3>
         </div>
 
@@ -226,17 +230,17 @@
     <div class="development-container" >
 
       <div class="programming-section">
-        <i class="fa-solid fa-toolbox"></i>
+        <i class="fa-solid fa-toolbox themeIcon"></i>
         <h3>Development</h3>
       </div>
 
       <div class="languages-container">
         <div>
-          <i class="fa-brands fa-git"></i>
+          <i class="fa-brands fa-git themeIcon"></i>
           <h3>Git</h3>
         </div>
         <div>
-          <i class="fa-brands fa-android"></i>
+          <i class="fa-brands fa-android themeIcon"></i>
           <h3>Android Studio</h3>
         </div>
 
@@ -398,7 +402,7 @@
   </h1>
   <div class="container">
 
-      <i class="fa-regular fa-file"></i>
+      <i class="fa-regular fa-file themeIcon"></i>
       <div class="section-info" >
 
         <embed src="media/resume.pdf" width="575" height="500">
@@ -407,7 +411,7 @@
 
     <div class="resume-actions-container" >
       <i title="expand resume" class="fa-regular fa-eye" onclick="showOverlay()"></i>
-      <a title="download my resume" href="media/resume.pdf" download ><i class="fa-regular fa-circle-down"></i></a>
+      <a title="download my resume" href="media/resume.pdf" download ><i class="fa-regular fa-circle-down themeIcon"></i></a>
     </div>
 
   </div>
@@ -422,12 +426,12 @@
   </h1>
   <div class="container">
 
-    <i class="fa-regular fa-id-card"></i>
+    <i class="fa-regular fa-id-card themeIcon"></i>
     <div class="section-info contact-container" >
 
-        <a title="elouis12@me.com" href="mailto:elouis12@me.com"><i class="fa-regular fa-envelope"></i></a>
-        <a title="https://github.com/Elouis12" href="https://github.com/Elouis12"><i class="fa-brands fa-github"></i></i></a>
-        <a title="https://linkedin.com/in/ernesto-louis-46795b235/" href="https://linkedin.com/in/ernesto-louis-46795b235/"><i class="fa-brands fa-linkedin"></i></a>
+        <a title="elouis12@me.com" href="mailto:elouis12@me.com"><i class="fa-regular fa-envelope themeIcon"></i></a>
+        <a title="https://github.com/Elouis12" href="https://github.com/Elouis12"><i class="fa-brands fa-github themeIcon"></i></i></a>
+        <a title="https://linkedin.com/in/ernesto-louis-46795b235/" href="https://linkedin.com/in/ernesto-louis-46795b235/"><i class="fa-brands fa-linkedin themeIcon"></i></a>
 
     </div>
 

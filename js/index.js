@@ -74,3 +74,24 @@ const projectDisplay = (project) => {
     return  projectDetails[project];
 
 }
+
+
+const darkMode = () => {
+
+
+    document.body.classList.toggle("darkModeBody");
+
+    let themeIcons = document.getElementsByClassName("themeIcon");
+
+    for( let x = 0; x < themeIcons.length; x+=1 ){ themeIcons[x].classList.toggle("darkModeIcon") }
+
+    let nightTheme = document.getElementById("nightTheme");
+
+    nightTheme.getAttribute("class").includes("fa-cloud-moon") ?
+        nightTheme.setAttribute("class", "fa-solid fa-cloud-sun") :
+        nightTheme.setAttribute("class", "fa-solid fa-cloud-moon")
+
+    let logo = document.getElementById("logo");
+    logo.style.color = "hsl(0, 0%, 100%)";
+
+}

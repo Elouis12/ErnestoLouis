@@ -1,3 +1,9 @@
+/*
+    white hsl(0, 0%, 100%);
+    blue hsl(207, 19%, 9%);
+    green hsl(142, 90%, 61%);
+*/
+
 body{
 
 
@@ -6,11 +12,27 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: white;
+    color: hsl(0, 0%, 100%);
     position: relative;
 }
 
+.darkModeBody{
 
+
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: hsl(207, 19%, 9%);
+    position: relative;
+
+}
+
+.darkModeIcon{
+
+    color: hsl(207, 19%, 9%);
+}
 
 ul{
 
@@ -22,6 +44,21 @@ ul{
     margin: 0 auto 100px;
 
 }
+
+.logo-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.logo-container i{
+
+    font-size: 30px;
+    cursor: pointer;
+    color: hsl(142, 90%, 61%);
+
+}
 .navbar{
 
     position: fixed;
@@ -29,8 +66,8 @@ ul{
     left: 0;
     /*width: 50%;*/
     width: 100%;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    /*border-bottom-left-radius: 1rem;*/
+    /*border-bottom-right-radius: 1rem;*/
     box-shadow: 0 2px 4px 0 rgba(0,0,0,1);
     /*overflow: hidden;*/
     z-index: 1;
@@ -51,11 +88,7 @@ nav .container{
     background-color: hsl(207, 19%, 9%);
 }
 
-nav .logo{
 
-    color: hsl(0, 0%, 100%);
-    margin-left: 20px;
-}
 
 nav a, li{
 
@@ -375,6 +408,7 @@ p{
 
         display: block;
         font-size: 30px;
+        cursor: pointer;
     }
 
     #dropdown:hover #dropdown-content{
