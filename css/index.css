@@ -11,9 +11,11 @@ body{
     background-color: hsl(207, 19%, 9%);
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
     color: hsl(0, 0%, 100%);
     position: relative;
+    width: 90%;
+    margin: auto;
 }
 
 .darkModeBody{
@@ -23,7 +25,7 @@ body{
     background-color: hsl(0, 0%, 100%);
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: auto;
     color: hsl(207, 19%, 9%);
     position: relative;
 
@@ -145,7 +147,7 @@ i{
 section > .container{
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     /*border: solid red;*/
     flex-basis: 400px;
@@ -294,6 +296,14 @@ p{
     display: none;
 }
 
+.skills-container{
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .skills-container > div{
 
     display: flex;
@@ -315,69 +325,16 @@ p{
     color: hsl(142, 90%, 61%);
 }
 
-.languages-container i {
-
-    /*font-size: 50px;*/
-}
 .languages-container h3 {
 
-    /*font-size: 10px;*/
     text-align: center;
 }
 
-.programming-section{
-
-    /*align-self: center;*/
-
-}
 
 .programming-section > h3{
 
-    /*background-color: red;*/
     width: 400px;
 }
-/*.skills-container > div{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-left: 0;
-
-}
-
-.programming-section{
-
-    justify-self: end;
-    background-color: red;
-
-}
-
-
-.languages-container{
-
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.languages-container > div{
-
-    text-align: center;
-    !*margin: 0 20px 0 20px;*!
-    flex-basis: 33.33%;
-
-}
-
-.languages-container  h3{
-
-    width: 100%;
-    text-align: center;
-    margin: 10px 10px;
-    color: hsl(142, 90%, 61%);
-}*/
-
 
 @media (max-width: 800px) { /* hover links */
 
@@ -448,6 +405,14 @@ p{
 @media (max-width: 1200px) {
 
 
+    .skills-container{
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .skills-container > div{
 
         display: flex;
@@ -464,7 +429,6 @@ p{
 
         align-self: center;
         justify-self: center;
-        /*margin: 0 auto;*/
         text-align: center;
         width: 100%;
     }
@@ -472,8 +436,8 @@ p{
     .languages-container{
 
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        /*align-items: center;*/
     }
 
 }
