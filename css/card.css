@@ -127,7 +127,7 @@
     color: rgba(255, 255, 255, 0.85);
     height: 100px;
     /*white-space: nowrap;*/
-    overflow: hidden;
+    overflow: scroll;
     /*text-overflow: ellipsis;*/
     /*border: solid red;*/
     /*background-color: red;*/
@@ -150,4 +150,28 @@
 
     background-color: white;
 
+}
+
+
+
+#waldo-link-div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#waldo-link-div > a {
+
+    text-decoration: none;
+    color: lightblue/*#8395ca*/;
+}
+
+#waldo-link-div > a:hover {
+
+
+    background: #e3e7f3;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
