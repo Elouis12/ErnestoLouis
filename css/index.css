@@ -298,10 +298,10 @@ p{
 
 .skills-container{
 
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
 .skills-container > div{
@@ -313,16 +313,21 @@ p{
 
 .languages-container{
 
-    width: 600px;
-    /*background-color: red;*/
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .languages-container > div{
 
     margin: 0 0 30px 0;
     flex-basis: 25%;
     color: hsl(142, 90%, 61%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .languages-container h3 {
@@ -402,12 +407,13 @@ p{
 }
 
 
+/*
 @media (max-width: 1200px) {
 
 
     .skills-container{
 
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -440,4 +446,42 @@ p{
         justify-content: center;
     }
 
+}*/
+
+.programming-container{
+
+
+}
+@media (max-width: 1000px) {
+
+
+    .programming-container, .exposed-container, .development-container{
+
+        /*all: unset;*/
+        display: flex;
+        flex-direction: column;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .languages-container > div{
+
+        margin: 0 0 30px 0;
+        flex-basis: 33%;
+        color: hsl(142, 90%, 61%);
+    }
+
+    .programming-section{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .programming-section > h3{
+
+        text-align: center;
+    }
 }
