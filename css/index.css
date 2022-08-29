@@ -307,9 +307,16 @@ p{
 .skills-container > div{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 100px;
 }
+
+.skills-container .programming-section{
+
+    margin-left: 30px;
+
+}
+
 
 .languages-container{
 
@@ -320,7 +327,7 @@ p{
 }
 .languages-container > div{
 
-    margin: 0 0 30px 0;
+    /*margin: 0 0 30px 0;*/
     flex-basis: 25%;
     color: hsl(142, 90%, 61%);
 
