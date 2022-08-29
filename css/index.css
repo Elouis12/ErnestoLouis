@@ -26,14 +26,21 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: auto;
-    color: hsl(207, 19%, 9%);
+    /*color: hsl(207, 19%, 9%);*/
     position: relative;
+
+}
+
+.dark-mode-section-title{
+
+    color: hsl(207, 19%, 9%);
+
 
 }
 
 .darkModeIcon{
 
-    color: hsl(207, 19%, 9%);
+    /*color: hsl(207, 19%, 9%);*/
 }
 
 ul{
